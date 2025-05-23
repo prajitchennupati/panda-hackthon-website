@@ -531,9 +531,9 @@ export default function Home() {
 
           <div className="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto">
             {[
-              { place: "1st Place", prize: "$5,000", extras: "Plus mentorship opportunities and tech gadgets" },
-              { place: "2nd Place", prize: "$3,000", extras: "Plus cloud credits and software licenses" },
-              { place: "3rd Place", prize: "$1,500", extras: "Plus swag packages and online courses" },
+              { place: "1st Place", prize: "TBD", extras: "Plus mentorship opportunities and tech gadgets" },
+              { place: "2nd Place", prize: "TBD", extras: "Plus cloud credits and software licenses" },
+              { place: "3rd Place", prize: "TBD", extras: "Plus swag packages and online courses" },
             ].map((prize, index) => (
               <motion.div
                 key={prize.place}
@@ -686,11 +686,7 @@ export default function Home() {
               },
               {
                 q: "How much does it cost?",
-                a: "Nothing! PANDAHack is completely free to attend. We provide food, drinks, and swag.",
-              },
-              {
-                q: "What should I bring?",
-                a: "Your laptop, charger, any hardware you want to hack with, and your creativity!",
+                a: "Nothing! PANDAHack is completely free to attend.",
               },
               {
                 q: "Do I need a team?",
@@ -700,7 +696,6 @@ export default function Home() {
                 q: "What if I'm a beginner?",
                 a: "Perfect! Our workshop series is designed to guide you through the entire process, from ideation to final product.",
               },
-              { q: "Will there be food?", a: "We provide meals, snacks, and plenty of caffeine to keep you going." },
               {
                 q: "Do I need to attend all workshops?",
                 a: "While attending all workshops provides the best experience, you can join individual sessions based on your interests and availability.",
