@@ -19,7 +19,7 @@ export default function Home() {
 
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ["home", "about", "schedule", "prizes", "requirements", "faq", "register"]
+      const sections = ["home", "about", "schedule", "prizes", "requirements", "faq", "founders"]
       const scrollPosition = window.scrollY + 100
 
       for (const section of sections) {
@@ -54,15 +54,15 @@ export default function Home() {
           <div className="flex items-center gap-2">
             <Image
               src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-OCGXhjKSoLmMA5c3lximQipLjDFyZ9.png"
-              alt="PandaHack Logo"
+              alt="PANDAHack Logo"
               width={40}
               height={40}
               className="rounded-full border border-tech-accent"
             />
-            <span className="font-bold text-xl text-tech-accent">PandaHack</span>
+            <span className="font-bold text-xl text-tech-accent">PANDAHack</span>
           </div>
           <nav className="hidden md:flex gap-6">
-            {["Home", "About", "Schedule", "Prizes", "Requirements", "FAQ", "Register"].map((item) => (
+            {["Home", "About", "Schedule", "Prizes", "Requirements", "FAQ", "Founders"].map((item) => (
               <a
                 key={item}
                 href={`#${item.toLowerCase()}`}
@@ -102,7 +102,7 @@ export default function Home() {
           >
             <Image
               src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-OCGXhjKSoLmMA5c3lximQipLjDFyZ9.png"
-              alt="PandaHack Logo"
+              alt="PANDAHack Logo"
               width={150}
               height={150}
               className="mx-auto rounded-full border-2 border-tech-accent shadow-lg shadow-tech-accent/20"
@@ -115,7 +115,7 @@ export default function Home() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2 }}
           >
-            <span className="text-tech-accent">Panda</span>Hack 2025
+            <span className="text-tech-accent">PANDA</span>Hack 2025
           </motion.h1>
 
           <motion.div
@@ -178,7 +178,7 @@ export default function Home() {
             viewport={{ once: true }}
             className="text-center mb-12"
           >
-            <h2 className="text-4xl font-bold mb-2 text-tech-accent">About PandaHack</h2>
+            <h2 className="text-4xl font-bold mb-2 text-tech-accent">About PANDAHack</h2>
             <div className="w-20 h-1 bg-tech-accent mx-auto"></div>
           </motion.div>
 
@@ -190,9 +190,8 @@ export default function Home() {
               viewport={{ once: true }}
             >
               <div className="prose prose-invert max-w-none">
-                {/* Update the About section text (around line 180-195) */}
                 <p className="text-lg mb-4 text-gray-300">
-                  PandaHack 2025 is an exciting workshop series designed to challenge participants to innovate and build
+                  PANDAHack 2025 is an exciting workshop series designed to challenge participants to innovate and build
                   solutions that enhance productivity. In today's fast-paced world, productivity is at the core of
                   personal and professional success. This year's program focuses on creating tools, platforms, and
                   solutions that can streamline workflows, automate tasks, and help users achieve more in less time.
@@ -204,7 +203,7 @@ export default function Home() {
                   May to late June, with guided mentorship and collaborative sessions.
                 </p>
                 <p className="text-lg mb-4 text-gray-300">
-                  With no restrictions on technology or platform, PandaHack 2025 is open to a wide range of innovative
+                  With no restrictions on technology or platform, PANDAHack 2025 is open to a wide range of innovative
                   ideas and approaches. We welcome participants of all skill levels to collaborate, learn, and push the
                   boundaries of what's possible in enhancing productivity.
                 </p>
@@ -230,7 +229,6 @@ export default function Home() {
                 </div>
                 <div className="font-mono text-sm text-tech-accent">
                   <p>$ ./pandahack --info</p>
-                  {/* Update the event info in the terminal display (around line 220-230) */}
                   <p className="text-gray-400">{">"} Loading event details...</p>
                   <p className="text-gray-400">{">"} 5 weeks of workshops</p>
                   <p className="text-gray-400">{">"} 1-2 sessions per week</p>
@@ -242,7 +240,6 @@ export default function Home() {
               </div>
 
               <div className="grid grid-cols-2 gap-4">
-                {/* Update the event details cards (around line 240-260) */}
                 <div className="bg-tech-dark border border-tech-accent/30 p-6 rounded-lg text-center hover:border-tech-accent transition-all duration-300">
                   <Calendar className="mx-auto mb-2 text-tech-accent" size={32} />
                   <h4 className="font-bold text-white">May 26 - June 30</h4>
@@ -280,7 +277,7 @@ export default function Home() {
                 XR DOJO - Our Sponsor
               </h3>
               <p className="text-gray-300 mb-4">
-                We want to thank this year's sponsor XR DOJO for their help in curating PandaHack 2025. A big shoutout
+                We want to thank this year's sponsor XR DOJO for their help in curating PANDAHack 2025. A big shoutout
                 to them!
               </p>
               <div className="p-4 bg-tech-darker rounded-lg border border-tech-accent/20 italic text-gray-300">
@@ -600,9 +597,8 @@ export default function Home() {
             >
               <div className="bg-tech-dark border border-tech-accent/30 p-6 rounded-lg">
                 <h3 className="text-2xl font-bold mb-4 text-tech-accent">What To Build</h3>
-                {/* Update the "What To Build" section */}
                 <p className="text-gray-300 mb-4">
-                  For PandaHack 2025, participants are encouraged to build solutions that center around the theme of
+                  For PANDAHack 2025, participants are encouraged to build solutions that center around the theme of
                   productivity. Throughout our workshop series, you'll develop a project that aims to improve
                   efficiency, streamline workflows, or help individuals and teams accomplish tasks more effectively.
                   Whether you focus on automating repetitive tasks, enhancing team collaboration, or developing
@@ -622,7 +618,6 @@ export default function Home() {
                 <h3 className="text-2xl font-bold mb-4 text-tech-accent">What To Submit</h3>
                 <div className="space-y-6">
                   <div>
-                    {/* Update the "What To Submit" section for the final demo */}
                     <h4 className="text-xl font-semibold text-white mb-2">1) Project Demo</h4>
                     <p className="text-gray-300">
                       Prepare a live demonstration of your project (5-7 minutes) for the final Demo Day. You'll showcase
@@ -691,7 +686,7 @@ export default function Home() {
               },
               {
                 q: "How much does it cost?",
-                a: "Nothing! PandaHack is completely free to attend. We provide food, drinks, and swag.",
+                a: "Nothing! PANDAHack is completely free to attend. We provide food, drinks, and swag.",
               },
               {
                 q: "What should I bring?",
@@ -740,8 +735,8 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Register Section */}
-      <section id="register" className="py-20 bg-tech-dark relative">
+      {/* Founders Section */}
+      <section id="founders" className="py-20 bg-tech-dark relative">
         <div className="absolute inset-0 z-0 circuit-bg opacity-20"></div>
         <div className="container mx-auto px-4 relative z-10">
           <motion.div
@@ -751,54 +746,112 @@ export default function Home() {
             viewport={{ once: true }}
             className="text-center mb-12"
           >
-            <h2 className="text-4xl font-bold mb-2 text-tech-accent">Ready to Hack?</h2>
+            <h2 className="text-4xl font-bold mb-2 text-tech-accent">Our Founders</h2>
             <div className="w-20 h-1 bg-tech-accent mx-auto"></div>
             <p className="text-xl mt-4 max-w-2xl mx-auto text-gray-300">
-              Join us for an unforgettable weekend of innovation, learning, and fun. Registration is free and spots are
-              limited!
+              Meet the visionary individuals who brought PANDAHack to life.
             </p>
           </motion.div>
 
+          <div className="grid md:grid-cols-2 gap-10 max-w-4xl mx-auto">
+            <motion.div
+              initial={{ opacity: 0, scale: 0.9 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.5 }}
+              viewport={{ once: true }}
+              className="bg-tech-dark border border-tech-accent p-8 rounded-lg shadow-lg shadow-tech-accent/10"
+            >
+              <div className="flex flex-col items-center text-center">
+                <div className="w-32 h-32 rounded-full bg-tech-darker border-2 border-tech-accent mb-4 overflow-hidden">
+                  {/* Placeholder image - you can replace with actual photo if available */}
+                  <div className="w-full h-full flex items-center justify-center text-tech-accent text-4xl font-bold">PC</div>
+                </div>
+                <h3 className="text-2xl font-bold mb-2 text-tech-accent">Prajit Chennupati</h3>
+                <p className="text-gray-300 mb-4">Co-Founder & Lead Developer</p>
+                <p className="text-gray-300">
+                  Passionate about technology and innovation, Prajit envisioned PANDAHack as a platform to bring together creative minds 
+                  and foster collaboration in the tech community.
+                </p>
+                <div className="flex mt-4 gap-3">
+                  <a href="#" className="text-tech-accent hover:text-tech-accent/80">
+                    <Github size={20} />
+                  </a>
+                  <a href="#" className="text-tech-accent hover:text-tech-accent/80">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      height="20"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    >
+                      <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                      <rect width="4" height="12" x="2" y="9"></rect>
+                      <circle cx="4" cy="4" r="2"></circle>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, scale: 0.9 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.5, delay: 0.2 }}
+              viewport={{ once: true }}
+              className="bg-tech-dark border border-tech-accent p-8 rounded-lg shadow-lg shadow-tech-accent/10"
+            >
+              <div className="flex flex-col items-center text-center">
+                <div className="w-32 h-32 rounded-full bg-tech-darker border-2 border-tech-accent mb-4 overflow-hidden">
+                  {/* Placeholder image - you can replace with actual photo if available */}
+                  <div className="w-full h-full flex items-center justify-center text-tech-accent text-4xl font-bold">SA</div>
+                </div>
+                <h3 className="text-2xl font-bold mb-2 text-tech-accent">Shrey Agarwal</h3>
+                <p className="text-gray-300 mb-4">Co-Founder & Creative Director</p>
+                <p className="text-gray-300">
+                  With a keen eye for design and strategy, Shrey has been instrumental in shaping PANDAHack's vision and 
+                  creating an engaging experience for all participants.
+                </p>
+                <div className="flex mt-4 gap-3">
+                  <a href="#" className="text-tech-accent hover:text-tech-accent/80">
+                    <Github size={20} />
+                  </a>
+                  <a href="#" className="text-tech-accent hover:text-tech-accent/80">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      height="20"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    >
+                      <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                      <rect width="4" height="12" x="2" y="9"></rect>
+                      <circle cx="4" cy="4" r="2"></circle>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </motion.div>
+          </div>
+          
           <motion.div
-            initial={{ opacity: 0, scale: 0.9 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.5 }}
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.6 }}
             viewport={{ once: true }}
-            className="max-w-md mx-auto bg-tech-dark border border-tech-accent p-8 rounded-lg shadow-lg shadow-tech-accent/10"
+            className="text-center mt-16"
           >
-            <h3 className="text-2xl font-bold mb-6 text-center text-tech-accent">Register Now</h3>
-            <form className="space-y-4">
-              <div>
-                <label className="block mb-1 font-medium text-gray-300">Full Name</label>
-                <input
-                  type="text"
-                  className="w-full p-2 rounded border border-tech-accent/30 bg-tech-darker text-white focus:outline-none focus:ring-2 focus:ring-tech-accent"
-                />
-              </div>
-              <div>
-                <label className="block mb-1 font-medium text-gray-300">Email</label>
-                <input
-                  type="email"
-                  className="w-full p-2 rounded border border-tech-accent/30 bg-tech-darker text-white focus:outline-none focus:ring-2 focus:ring-tech-accent"
-                />
-              </div>
-              <div>
-                <label className="block mb-1 font-medium text-gray-300">School/Organization</label>
-                <input
-                  type="text"
-                  className="w-full p-2 rounded border border-tech-accent/30 bg-tech-darker text-white focus:outline-none focus:ring-2 focus:ring-tech-accent"
-                />
-              </div>
-              <div>
-                <label className="block mb-1 font-medium text-gray-300">Experience Level</label>
-                <select className="w-full p-2 rounded border border-tech-accent/30 bg-tech-darker text-white focus:outline-none focus:ring-2 focus:ring-tech-accent">
-                  <option>Beginner</option>
-                  <option>Intermediate</option>
-                  <option>Advanced</option>
-                </select>
-              </div>
-              <Button className="w-full bg-tech-accent text-black hover:bg-tech-accent/80">Submit Application</Button>
-            </form>
+            <p className="text-lg text-gray-300">Interested in joining the PANDAHack team?</p>
+            <Button variant="outline" className="mt-4 border-tech-accent text-tech-accent hover:bg-tech-accent/20">
+              Contact Us
+            </Button>
           </motion.div>
         </div>
       </section>
@@ -810,12 +863,12 @@ export default function Home() {
             <div className="flex items-center gap-2 mb-4 md:mb-0">
               <Image
                 src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-OCGXhjKSoLmMA5c3lximQipLjDFyZ9.png"
-                alt="PandaHack Logo"
+                alt="PANDAHack Logo"
                 width={40}
                 height={40}
                 className="rounded-full border border-tech-accent"
               />
-              <span className="font-bold text-xl text-tech-accent">PandaHack</span>
+              <span className="font-bold text-xl text-tech-accent">PANDAHack</span>
             </div>
 
             <div className="flex gap-6 mb-4 md:mb-0">
@@ -856,11 +909,11 @@ export default function Home() {
               </a>
             </div>
 
-            <div className="text-sm">&copy; {new Date().getFullYear()} PandaHack. All rights reserved.</div>
+            <div className="text-sm">&copy; {new Date().getFullYear()} PANDAHack. All rights reserved.</div>
           </div>
 
           <div className="mt-6 pt-6 border-t border-tech-accent/10 text-center text-xs text-gray-500">
-            <p>Built with 💻 by the PandaHack Team</p>
+            <p>Built with 💻 by the PANDAHack Team</p>
             <div className="mt-2 font-mono">
               <span className="text-tech-accent">if</span> (<span className="text-yellow-500">you</span>.
               <span className="text-purple-400">love</span>(<span className="text-tech-accent">coding</span>)) {"{"}
